@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <Title>Gala Eclyps 2023</Title>
+        <link href="../style.css" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <header>
+            
+            <div class="navbar">
+                <div class="logo">
+                    <a href="../Accueil/Accueil.html"><img src="../Images/Logogala_sans_fond_sans_bulles.png" alt="Logo"> </a>
+                    <a>Gala Eclyps</a>
+                </div>
+
+                <button class="menu-toggle">&#9776; Menu</button>
+                <nav>
+                    <ul>
+                    <li><a href="../Accueil/Accueil.html">Accueil</a></li>
+                    <li><a href="../Gala_2023/Gala_2023.html">Gala 2023</a></li>
+                    <li><a href="../Tournoi_des_anciens/Tournoi_des_anciens.html">Tournoi des Anciens</a></li>
+                    <li><a href="../Utopia/Utopia.html">Utopia</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropbtn">Partenariats</a>
+                        <div class="dropdown-content">
+                            <a href="../Partenariats/partenariats.html">Nos partenaires</a>
+                            <a href="../Partenariats/devenir_partenaire.html">Devenir Partenaire</a>
+                        </div>
+                    </li>
+                    <li><a href="../Galerie/Galerie.html">Galerie</a></li>
+                    <li><a href="../Infos_pratiques/Infos_pratiques.html">Infos pratiques</a></li>
+                    <li><a href="../L_equipe/L_equipe.html">L'équipe</a></li>
+                </ul>
+                </nav>
+                <div class="inscription">
+                    <a href="../Inscription/Inscription.html">Inscription</a>
+                </div>
+            </div>
+        </header>
+
+
+        <main>
+            
+            <div class="entier">
+                <h1>Le mandat</h1>
+                <img src="../Images/mandat.jpg">
+
+            </div>
+            <h2>Le bureau</h2>
+            <div class="mandat">
+                <div><img src="../Images/maiwey.png"><p>Emma LAVERGNE</p><a href="mailto:emma.lavergne@etu.ec-lyon.fr">emma.lavergne@etu.ec-lyon.fr</a><p>Présidente</p></div>
+                <div><img src="../Images/sykah.png"><p>Lorraine AIKEN</p><a href="mailto:lorraine.aiken@etu.ec-lyon.fr">lorraine.aiken@etu.ec-lyon.fr</a><p>Secrétaire générale</p></div>
+                <div><img src="../Images/ghiaya.png"><p>Méline TATON</p><a href="mailto:meline.taton@etu.ec-lyon.fr">meline.taton@etu.ec-lyon.fr</a><p>Trésorière</p></div>
+            </div>
+            <h2>Le pôle logistique</h2>
+            <div class="mandat">
+                <div><img src="../Images/sahtche.png"><p>Oriane POULAT</p><a href="mailto:oriane.poulat@etu.ec-lyon.fr">oriane.poulat@etu.ec-lyon.fr</a><p>VP Site</p></div>
+                <div><img src="../Images/saph.png"><p>Sarah PUROSKI</p><a href="mailto:sarah.puroski@etu.ec-lyon.fr">sarah.puroski@etu.ec-lyon.fr</a><p>VP Matos</p></div>
+                <div><img src="../Images/ayahtii.png"><p>Nawfal SELMANI</p><a href="mailto:nawfal.selmani@etu.ec-lyon.fr">nawfal.selmani@etu.ec-lyon.fr</a><p>VP Artiste/son-lumières</p></div>
+            </div>
+            <h2>Le pôle communication</h2>
+            <div class="mandat">
+                <div><img src="../Images/lyverh.png"><p>Julie BAFFOS</p><a href="mailto:julie.baffos@etu.ec-lyon.fr">julie.baffos@etu.ec-lyon.fr</a><p>VP Diplômés</p></div>
+                <div><img src="../Images/saph.png"><p>Jules LEROY</p><a href="mailto:jules.leroy@etu.ec-lyon.fr">jules.leroy@etu.ec-lyon.fr</a><p>VP Com</p></div>
+                <div><img src="../Images/saph.png"><p>Ferdinand DE LA TOUR</p><a href="mailto:ferdinand.de-latour@etu.ec-lyon.fr">ferdinand.de-latour@etu.ec-lyon.fr</a><p>VP Sponsors</p></div>
+            </div>
+            <h2>Le pôle animation</h2>
+            <div class="mandat">
+                <div><img src="../Images/ysby.png"><p>Soline Minvielle</p><a href="mailto:soline.minvielle@etu.ec-lyon.fr">soline.minvielle@etu.ec-lyon.fr</a><p>VP jsp</p></div>
+                <div><img src="../Images/packa.png"><p>Maximilien GRENNAT</p><a href="mailto:maximilien.grennat@etu.ec-lyon.fr">maximilien.grennat@etu.ec-lyon.fr</a><p>VP jsp</p></div>
+                <div><img src="../Images/saph.png"><p>Alexis SAGE</p><a href="mailto:alexis.sage@etu.ec-lyon.fr">alexis.sage@etu.ec-lyon.fr</a><p>VP diner</p></div>
+            </div>
+
+        </main>
+
+<footer>
+    <div class="footer-content">
+        <div class="contact-info">
+            <p>Suivez-nous : <a href="https://www.instagram.com/gala_eclyps/" target="_blank">Instagram</a> | <a href="https://www.facebook.com/galaeclyps" target="_blank">Facebook</a></p>
+        </div>
+        <p>Contact : ecl.gala@gmail.com</p>
+        <div class="copyright">
+            <p>Gala Eclyps Centrale Lyon - Tous droits réservés</p>
+        </div>
+    </div>
+</footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            var menuToggle = document.querySelector('.menu-toggle');
+            var navbar = document.querySelector('.navbar');
+    
+            menuToggle.addEventListener('click', function() {
+                navbar.classList.toggle('active');
+            });
+        });
+    </script>
+    </body>
+
+
+
+</html>

@@ -1,0 +1,442 @@
+/*général*/ 
+
+body {
+    margin: 0;
+    font-family: 'Garamond', sans-serif;
+    font-size: 125%;
+}
+
+header {
+    background-color: #001F3F; /* Couleur de fond de la barre de navigation */
+    padding: 10px 0;
+    margin: 0;
+    font-style: italic;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 3%;
+    margin-right: 3%;
+}
+
+nav {
+    flex-grow: 1;
+    text-align: center;
+}
+
+nav li {
+    color: #FFD700;
+    text-decoration: none;
+    font-style: italic;
+    padding: 10px 15px;
+    display: inline-block;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    color: #FFD700;
+    font-size: 150%;
+    font-weight: bold;
+}
+
+.logo img {
+    height: 60px; 
+    margin-right: 20px;
+}
+
+
+.inscription a {
+    font-style: italic;
+    padding: 10px 15px;
+    display: inline-block;
+}
+
+
+a {
+    color: #FFD700; 
+    text-decoration: none; 
+}
+
+/* Ajoutez ces styles à votre feuille de style CSS existante */
+
+.menu-toggle {
+    display: none; /* Masque le bouton du menu par défaut */
+    font-size: 16px;
+    background-color: transparent;
+    border: none;
+    color: #FFD700;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 900px) {
+    .navbar ul {
+        display: none; /* Masque la liste de navigation par défaut sur les écrans plus petits */
+    }
+
+    .menu-toggle {
+        display: block; /* Affiche le bouton du menu sur les écrans plus petits */
+        margin-left: 5%;
+    }
+
+    .navbar.active ul {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 60px; /* Ajustez la position du menu déroulant par rapport à votre barre de navigation */
+        left: 0;
+        width: 100%;
+        background-color: #001F3F;
+        z-index: 1;
+    }
+
+    .navbar.active li {
+        text-align: center;
+        padding: 10px 0;
+        border-bottom: 1px solid #FFD700;
+    }
+}
+
+
+/* Ajoutez ces styles pour le menu déroulant */
+.dropdown {
+    position: relative;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #001F3F; /* Fond du menu déroulant */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: #fff;
+    padding: 12px 16px;
+    display: block;
+    text-decoration: none;
+    text-align: left;
+    font-style: normal; /* Si vous souhaitez annuler le style italique pour les liens dans le menu déroulant */
+}
+
+.dropdown-content a:hover {
+    background-color: #2980b9; /* Couleur de survol des liens dans le menu déroulant */
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+
+
+
+footer {
+    background-color: #001F3F;
+    padding: 20px 0;
+    text-align: center;
+    color: #FFD700;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+main{
+    position: relative;
+    background: url("Images/olena-bohovyk-p8NSgvjEk-Y-unsplash.jpg");
+    padding-bottom: 10%;
+
+    color: #FFD700;
+}
+
+
+
+/*accueil*/
+
+.presentation_gala{
+    margin-top: 10%;
+    padding-left: 5%;
+    padding-right: 5%;
+    display: flex;
+    align-items: center;
+}
+
+.presentation_gala img{
+    width: 40%;
+    height: 40%;
+    padding-left: 5%;
+}
+
+
+
+.container {
+    max-width: 100%;
+    margin: auto;
+    position: relative;
+  }
+  
+  .slides {
+    display: none;
+  }
+  
+  .slides img {
+    width: 100%; /* La largeur de l'image occupera 100% de la largeur de son conteneur */
+    height: auto; /* La hauteur de l'image sera ajustée proportionnellement en fonction de la largeur */
+    max-height: 85vh; /* La hauteur maximale sera égale à 100% de la hauteur de la fenêtre visible (viewport height) */
+  }
+
+
+.prev,
+.next {
+  cursor: pointer;
+  color: white;
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  padding: 16px;
+  border-radius: 0 3px 3px 0;
+  background: rgba(0, 0, 0, .5);
+  transition: all .3s;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  .prev:hover,
+  .next:hover {
+    background: rgba(0, 0, 0, .8);
+  }
+
+
+  .dot-container {
+    position: absolute;
+    bottom: 10px; /* Ajustez cette valeur selon vos préférences pour définir la distance depuis le bas de l'image */
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    margin: 0 5px; /* Ajustez cette valeur pour définir la distance entre les dots */
+    display: inline-block;
+    background: #ddd;
+    transition: all .3s;
+  }
+  
+  .active,
+  .dot:hover {
+    background: #717171;
+  }
+
+
+
+/*l_equipe*/
+
+
+h1{
+    display: flex;
+    margin-top: 0;
+    padding-top: 5%;
+    justify-content: center;
+    
+}
+
+h2{
+    display: flex;
+    justify-content: center;
+    margin-top:5%;
+}
+
+
+.mandat{
+    display: flex;
+    justify-content: space-around;
+}
+
+.mandat div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.mandat div img{
+    width: 70%;
+    border: 4px solid #DAA520; 
+    border-radius: 20px; /* 50% 50% 50% 50% / 50% 50% 50% 50%  pour les faire rond */ 
+    overflow: hidden; /* Masquer le débordement de l'image */
+}
+
+
+.entier{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+.entier img{
+    width: 50%;
+
+    border: 4px solid #DAA520; 
+    border-radius: 20px; /* 50% 50% 50% 50% / 50% 50% 50% 50%  pour les faire rond */ 
+    overflow: hidden; /* Masquer le débordement de l'image */
+}
+
+/*Partenariats*/
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-right: 10%;
+    margin-left: 10%;
+}
+
+section p {
+    margin-bottom: 20px;
+}
+
+section a.button {
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 16px;
+    background-color: #3498db;
+    color: #ffffff;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out;
+    margin-top: 3%;
+}
+
+section a.button:hover {
+    background-color: #2980b9;
+}
+
+/* Nos partenariats */
+.partenariats {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: flex-start;
+}
+
+
+.partenariat_box {
+    display: flex;
+    flex-direction: column;
+    border: 3px solid #DAA520; /* Bordure dorée */
+    border-radius: 10px;
+    background-color: #2980b9; /* Fond bleu */
+    color: #EDEDED;
+    width: 30%;
+    margin: 10px; /* Marge pour l'espacement */
+    overflow: hidden; /* Correction pour éviter le dépassement de la bordure */
+    box-sizing: border-box; /* Inclure la bordure dans le calcul de la largeur */
+    position: relative; /* Ajoutez cette ligne pour permettre un positionnement absolu */
+}
+.partenariat_box img {
+    
+    width: 50%; /* Faire en sorte que l'image remplisse le conteneur */
+    margin: 5%;
+}
+
+.partenariat_info {
+    padding: 10px;
+}
+
+.partenariat_info a{
+    display: flex;
+    justify-content: center;
+}
+.en_savoir_plus {
+    color: #EDEDED;
+    text-decoration: none;
+    background-color: #DAA520; /* Couleur dorée pour le bouton */
+    padding: 5px 10px;
+    margin-top: auto; /* Pousse vers le bas */
+    border-radius: 3px;
+    position: absolute; /* Positionnement absolu par rapport à la boîte parente */
+    bottom: 0; /* En bas */
+    right: 0; /* À droite */
+}
+
+
+.en_savoir_plus:hover {
+    background-color: #ffd700; /* Couleur dorée plus claire au survol */
+}
+
+/* Devenir partenaire */
+
+.presentation_gala_2023{
+    padding-left: 5%;
+    padding-top:7%;
+    padding-right: 5%;
+    display: flex;
+    align-items: center;
+}
+
+.presentation_gala_2023 img{
+    width: 40%;
+    height: 40%;
+    padding-left: 5%;
+}
+
+/* Galerie*/
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.gallery-image {
+    width: 200px;
+    height: 150px;
+    object-fit: cover;
+    cursor: pointer;
+    margin: 10px;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.modal-content {
+    margin: auto;
+    display: block;
+    max-width: 80%;
+    max-height: 80%;
+}
+
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+}

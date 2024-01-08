@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <Title>Gala Eclyps 2023</Title>
+        <link href="../style.css" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <header>
+            
+            <div class="navbar">
+                <div class="logo">
+                    <a href="../Accueil/Accueil.html"><img src="../Images/Logogala_sans_fond_sans_bulles.png" alt="Logo"> </a>
+                    <a>Gala Eclyps</a>
+                </div>
+
+                <button class="menu-toggle">&#9776; Menu</button>
+                <nav>
+                    <ul>
+                    <li><a href="../Accueil/Accueil.html">Accueil</a></li>
+                    <li><a href="../Gala_2023/Gala_2023.html">Gala 2023</a></li>
+                    <li><a href="../Tournoi_des_anciens/Tournoi_des_anciens.html">Tournoi des Anciens</a></li>
+                    <li><a href="../Utopia/Utopia.html">Utopia</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropbtn">Partenariats</a>
+                        <div class="dropdown-content">
+                            <a href="../Partenariats/partenariats.html">Nos partenaires</a>
+                            <a href="../Partenariats/devenir_partenaire.html">Devenir Partenaire</a>
+                        </div>
+                    </li>
+                    <li><a href="../Galerie/Galerie.html">Galerie</a></li>
+                    <li><a href="../Infos_pratiques/Infos_pratiques.html">Infos pratiques</a></li>
+                    <li><a href="../L_equipe/L_equipe.html">L'équipe</a></li>
+                </ul>
+                </nav>
+                <div class="inscription">
+                    <a href="../Inscription/Inscription.html">Inscription</a>
+                </div>
+            </div>
+        </header>
+        
+        <main>
+            <h1>Galerie</h1>
+
+            <div class="gallery">
+                <img src="../Images/galerie/gal1.jpg" alt="Image 1" class="gallery-image" onclick="showImage('../Images/galerie/gal1.jpg')">
+                <img src="../Images/galerie/gal2.jpg" alt="Image 2" class="gallery-image" onclick="showImage('../Images/galerie/gal2.jpg')">
+                <img src="../Images/galerie/gal3.jpg" alt="Image 2" class="gallery-image" onclick="showImage('../Images/galerie/gal3.jpg')">
+                <img src="../Images/galerie/gal4.jpg" alt="Image 2" class="gallery-image" onclick="showImage('../Images/galerie/gal4.jpg')">
+                <img src="../Images/galerie/gal5.jpg" alt="Image 2" class="gallery-image" onclick="showImage('../Images/galerie/gal5.jpg')">
+                <img src="../Images/galerie/gal6.jpg" alt="Image 2" class="gallery-image" onclick="showImage('../Images/galerie/gal6.jpg')">
+                <img src="../Images/galerie/gal7.jpg" alt="Image 2" class="gallery-image" onclick="showImage('../Images/galerie/gal7.jpg')">
+                <img src="../Images/galerie/gal8.jpg" alt="Image 2" class="gallery-image" onclick="showImage('../Images/galerie/gal8.jpg')">
+                <img src="../Images/galerie/gal9.jpg" alt="Image 2" class="gallery-image" onclick="showImage('../Images/galerie/gal9.jpg')">
+                <img src="../Images/galerie/gal10.jpg" alt="Image 2" class="gallery-image" onclick="showImage('../Images/galerie/gal10.jpg')">
+                <img src="../Images/galerie/gal11.jpg" alt="Image 2" class="gallery-image" onclick="showImage('../Images/galerie/gal11.jpg')">
+                <img src="../Images/galerie/gal12.jpg" alt="Image 2" class="gallery-image" onclick="showImage('../Images/galerie/gal12.jpg')">
+                <img src="../Images/galerie/gal13.jpg" alt="Image 2" class="gallery-image" onclick="showImage('../Images/galerie/gal13.jpg')">
+                <img src="../Images/galerie/gal14.jpg" alt="Image 2" class="gallery-image" onclick="showImage('../Images/galerie/gal14.jpg')">
+                <img src="../Images/galerie/gal15.jpg" alt="Image 2" class="gallery-image" onclick="showImage('../Images/galerie/gal15.jpg')">
+                <img src="../Images/galerie/gal16.jpg" alt="Image 2" class="gallery-image" onclick="showImage('../Images/galerie/gal16.jpg')">
+                <img src="../Images/galerie/gal17.jpg" alt="Image 2" class="gallery-image" onclick="showImage('../Images/galerie/gal17.jpg')">
+                <img src="../Images/galerie/gal18.jpg" alt="Image 2" class="gallery-image" onclick="showImage('../Images/galerie/gal18.jpg')">
+                <!-- Ajoutez autant d'images que nécessaire -->
+            </div>
+        
+            <div class="modal" id="myModal">
+                <span class="close" onclick="closeModal()">&times;</span>
+                <img class="modal-content" id="modalImage">
+            </div>
+        
+            <script src="script.js"></script>
+
+        
+        </main>
+
+<footer>
+    <div class="footer-content">
+        <div class="contact-info">
+            <p>Suivez-nous : <a href="https://www.instagram.com/gala_eclyps/" target="_blank">Instagram</a> | <a href="https://www.facebook.com/galaeclyps" target="_blank">Facebook</a></p>
+        </div>
+        <p>Contact: ecl.gala@gmail.com</p>
+        <div class="copyright">
+            <p>Gala Eclyps Centrale Lyon - Tous droits réservés</p>
+        </div>
+    </div>
+</footer>
+
+    <script src="Galerie.js"></script>
+    </body>
+
+
+
+</html>

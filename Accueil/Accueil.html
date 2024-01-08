@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <Title>Gala Eclyps 2023</Title>
+        <link href="../style.css" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <header>
+            
+            <div class="navbar">
+                <div class="logo">
+                    <a href="../Accueil/Accueil.html"><img src="../Images/Logogala_sans_fond_sans_bulles.png" alt="Logo"> </a>
+                    <a>Gala Eclyps</a>
+                </div>
+
+                <button class="menu-toggle">&#9776; Menu</button>
+                <nav>
+                    <ul>
+                    <li><a href="../Accueil/Accueil.html">Accueil</a></li>
+                    <li><a href="../Gala_2023/Gala_2023.html">Gala 2023</a></li>
+                    <li><a href="../Tournoi_des_anciens/Tournoi_des_anciens.html">Tournoi des Anciens</a></li>
+                    <li><a href="../Utopia/Utopia.html">Utopia</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropbtn">Partenariats</a>
+                        <div class="dropdown-content">
+                            <a href="../Partenariats/partenariats.html">Nos partenaires</a>
+                            <a href="../Partenariats/devenir_partenaire.html">Devenir Partenaire</a>
+                        </div>
+                    </li>
+                    <li><a href="../Galerie/Galerie.html">Galerie</a></li>
+                    <li><a href="../Infos_pratiques/Infos_pratiques.html">Infos pratiques</a></li>
+                    <li><a href="../L_equipe/L_equipe.html">L'équipe</a></li>
+                </ul>
+                </nav>
+                <div class="inscription">
+                    <a href="../Inscription/Inscription.html">Inscription</a>
+                </div>
+            </div>
+        </header>
+
+
+       
+        <main>
+            <div class="container">
+                <div class="slides">
+                  <img src="https://zupimages.net/up/20/51/7ada.jpg" style="width:100%">
+                  <div class="dot-container">
+                    <span class="dot" onclick="currentSlide(1)"></span> 
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                  </div>
+                </div>
+              
+                <div class="slides">
+                  <img src="https://zupimages.net/up/20/51/cdrk.jpg" style="width:100%">
+                  <div class="dot-container">
+                    <span class="dot" onclick="currentSlide(3)"></span> 
+                    <span class="dot" onclick="currentSlide(4)"></span>
+                  </div>
+                </div>
+                
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+              </div>
+              <br>
+              
+              
+
+
+            
+            <div class="presentation_gala">
+                <div>
+                    
+                <h1>Le Gala en quelques mots</h1>
+            
+                     <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse euismod lacus ut massa convallis, eu hendrerit nunc auctor. Phasellus ultricies, neque non pellentesque interdum, purus justo pretium felis, non fringilla ipsum lectus quis orci. Quisque sit amet tincidunt est. Quisque mollis porta varius. Fusce ligula nisi, venenatis at rutrum quis, fringilla id tellus. Praesent sed turpis purus. Fusce id magna consequat, vehicula quam sed, efficitur tortor. Donec non venenatis urna. Praesent ligula eros, feugiat eu pharetra nec, pharetra sit amet ligula.
+                        Ut vel laoreet quam, eget tincidunt arcu. Vivamus eleifend erat nec urna consequat bibendum. Ut tristique augue mauris, id sodales urna malesuada sagittis. Vestibulum suscipit sit amet lacus et efficitur. Pellentesque lobortis tempor neque, nec egestas lectus consectetur vitae. Vivamus luctus gravida magna, quis ullamcorper libero. Etiam suscipit eget turpis tincidunt sodales. Quisque vestibulum ac massa at faucibus. Aenean sit amet nulla nulla.   
+                    </p>
+                </div>
+                <img src="../Images/soiree.jpg" alt="Soirée du Gala Eclyps 2022">
+            </div>
+                
+
+        </main>
+
+<footer>
+    <div class="footer-content">
+        <div class="contact-info">
+            <p>Suivez-nous : <a href="https://www.instagram.com/gala_eclyps/" target="_blank">Instagram</a> | <a href="https://www.facebook.com/galaeclyps" target="_blank">Facebook</a></p>
+        </div>
+        <p>Contact: ecl.gala@gmail.com</p>
+        <div class="copyright">
+            <p>Gala Eclyps Centrale Lyon - Tous droits réservés</p>
+        </div>
+    </div>
+</footer>
+
+    <script src="showSlides.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            var menuToggle = document.querySelector('.menu-toggle');
+            var navbar = document.querySelector('.navbar');
+    
+            menuToggle.addEventListener('click', function() {
+                navbar.classList.toggle('active');
+            });
+        });
+    </script>
+    </body>
+
+
+
+</html>
